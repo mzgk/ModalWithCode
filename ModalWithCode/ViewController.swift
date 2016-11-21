@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tapModalButton(_ sender: UIButton) {
+        let modal = self.storyboard?.instantiateViewController(withIdentifier: "ModalSB") as! ModalViewController
+        modal.modalTransitionStyle = .coverVertical
+        modal.modalPresentationStyle = .pageSheet
+
+        self.present(modal, animated: true, completion: nil)
+    }
 
 }
 
