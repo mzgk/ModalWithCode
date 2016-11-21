@@ -28,13 +28,28 @@
                                     <action selector="tapModalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpY-QW-Rnv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVb-vh-VYM">
+                                <rect key="frame" x="157" y="214" width="60" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="dCV-H7-0GP"/>
+                                    <constraint firstAttribute="width" constant="60" id="uuR-s6-pqt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sVb-vh-VYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Se-Of-BiP"/>
+                            <constraint firstItem="raA-NK-ye9" firstAttribute="top" secondItem="sVb-vh-VYM" secondAttribute="bottom" constant="80" id="PYQ-Of-gbk"/>
                             <constraint firstItem="raA-NK-ye9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cXR-9l-z5K"/>
                             <constraint firstItem="raA-NK-ye9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oDB-TW-WwB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closedLabel" destination="sVb-vh-VYM" id="lju-LZ-5ns"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,14 +69,32 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxH-n5-oab">
                                 <rect key="frame" x="167.5" y="318" width="39" height="30"/>
                                 <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="tapCloseButton:" destination="uds-O9-bNq" eventType="touchUpInside" id="LXi-dG-5Zq"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La8-H7-BYX">
+                                <rect key="frame" x="158" y="214" width="60" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="mjw-GN-hdq"/>
+                                    <constraint firstAttribute="width" constant="60" id="vRj-od-p5e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="La8-H7-BYX" firstAttribute="centerX" secondItem="vH1-py-gTi" secondAttribute="centerX" id="J7P-f8-0Et"/>
                             <constraint firstItem="rxH-n5-oab" firstAttribute="centerY" secondItem="vH1-py-gTi" secondAttribute="centerY" id="OOb-7o-eh7"/>
+                            <constraint firstItem="rxH-n5-oab" firstAttribute="top" secondItem="La8-H7-BYX" secondAttribute="bottom" constant="80" id="eH3-gr-8FC"/>
                             <constraint firstItem="rxH-n5-oab" firstAttribute="centerX" secondItem="vH1-py-gTi" secondAttribute="centerX" id="wN8-sh-n3C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="modalLabel" destination="La8-H7-BYX" id="xAT-gk-Huu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xug-3y-nMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
