@@ -56,13 +56,13 @@
 		329B03421DE32CD500689A22 /* ModalWithCode */ = {
 			isa = PBXGroup;
 			children = (
+				329B034F1DE32CD500689A22 /* Info.plist */,
 				329B03431DE32CD500689A22 /* AppDelegate.swift */,
-				329B03451DE32CD500689A22 /* ViewController.swift */,
-				329B03471DE32CD500689A22 /* Main.storyboard */,
 				329B03551DE32F3D00689A22 /* ModalViewController.swift */,
+				329B03451DE32CD500689A22 /* ViewController.swift */,
 				329B034A1DE32CD500689A22 /* Assets.xcassets */,
 				329B034C1DE32CD500689A22 /* LaunchScreen.storyboard */,
-				329B034F1DE32CD500689A22 /* Info.plist */,
+				329B03471DE32CD500689A22 /* Main.storyboard */,
 			);
 			path = ModalWithCode;
 			sourceTree = "<group>";
@@ -99,7 +99,7 @@
 				TargetAttributes = {
 					329B033F1DE32CD500689A22 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 4BES6VC9E8;
+						DevelopmentTeam = 9B357NMPCP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,7 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4BES6VC9E8;
+				DEVELOPMENT_TEAM = 9B357NMPCP;
 				INFOPLIST_FILE = ModalWithCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzgkworks.ModalWithCode;
@@ -278,7 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4BES6VC9E8;
+				DEVELOPMENT_TEAM = 9B357NMPCP;
 				INFOPLIST_FILE = ModalWithCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzgkworks.ModalWithCode;
@@ -306,6 +306,7 @@
 				329B03541DE32CD500689A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

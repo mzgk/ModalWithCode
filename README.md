@@ -1,8 +1,20 @@
+# 目的
+- Modal表示をコードで実装する
+- Scene間で値の受け渡しを行う
+- Delegateパターンの確認（Modalを閉じる処理）
+- ViewControllerのライフサイクルを確認する
+
+
 # Modalをコードで実装する
 - VCからボタンでModalVCを表示させる
-- データを渡す
-- ModalVCのボタンで自身を閉じる（Delegateプロトコルを使用）
-- ModalVCからVCにデータを渡す
+  - storyboard?.instantiateViewController(withIdentifier:) as! ModalのVCクラス名
+  - self.present(\_:animated:completion:)
+  - データを渡す
+- ModalVCのボタンで自身を閉じる
+  - Delegateプロトコルを使用し、処理は表示元に実装する
+  - ModalVCからVCにデータを渡す
+  - 表示元はでModalVCで定義したDelegateプロトコルを宣言し、閉じる処理を実装
+  - self.dismiss(animated: true, completion: nil)
 
 
 # Modal表示

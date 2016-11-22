@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,27 +28,27 @@
                                     <action selector="tapModalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpY-QW-Rnv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVb-vh-VYM">
-                                <rect key="frame" x="157" y="214" width="60" height="24"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-u9-aTh">
+                                <rect key="frame" x="87.5" y="228" width="200" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="dCV-H7-0GP"/>
-                                    <constraint firstAttribute="width" constant="60" id="uuR-s6-pqt"/>
+                                    <constraint firstAttribute="height" constant="30" id="43j-94-YOP"/>
+                                    <constraint firstAttribute="width" constant="200" id="FRf-Pm-6Ki"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sVb-vh-VYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Se-Of-BiP"/>
-                            <constraint firstItem="raA-NK-ye9" firstAttribute="top" secondItem="sVb-vh-VYM" secondAttribute="bottom" constant="80" id="PYQ-Of-gbk"/>
                             <constraint firstItem="raA-NK-ye9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cXR-9l-z5K"/>
+                            <constraint firstItem="QLs-u9-aTh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eZm-iq-Plr"/>
                             <constraint firstItem="raA-NK-ye9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oDB-TW-WwB"/>
+                            <constraint firstItem="raA-NK-ye9" firstAttribute="top" secondItem="QLs-u9-aTh" secondAttribute="bottom" constant="60" id="ta0-8d-0Ka"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="closedLabel" destination="sVb-vh-VYM" id="lju-LZ-5ns"/>
+                        <outlet property="inoutTextField" destination="QLs-u9-aTh" id="YHU-UX-s5p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,32 +73,32 @@
                                     <action selector="tapCloseButton:" destination="uds-O9-bNq" eventType="touchUpInside" id="LXi-dG-5Zq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La8-H7-BYX">
-                                <rect key="frame" x="158" y="214" width="60" height="24"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67Z-ae-5ac">
+                                <rect key="frame" x="87.5" y="228" width="200" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="mjw-GN-hdq"/>
-                                    <constraint firstAttribute="width" constant="60" id="vRj-od-p5e"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ukt-PM-NEh"/>
+                                    <constraint firstAttribute="height" constant="30" id="zEW-1s-l5i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="La8-H7-BYX" firstAttribute="centerX" secondItem="vH1-py-gTi" secondAttribute="centerX" id="J7P-f8-0Et"/>
+                            <constraint firstItem="67Z-ae-5ac" firstAttribute="centerX" secondItem="vH1-py-gTi" secondAttribute="centerX" id="NLg-oa-6zS"/>
                             <constraint firstItem="rxH-n5-oab" firstAttribute="centerY" secondItem="vH1-py-gTi" secondAttribute="centerY" id="OOb-7o-eh7"/>
-                            <constraint firstItem="rxH-n5-oab" firstAttribute="top" secondItem="La8-H7-BYX" secondAttribute="bottom" constant="80" id="eH3-gr-8FC"/>
+                            <constraint firstItem="rxH-n5-oab" firstAttribute="top" secondItem="67Z-ae-5ac" secondAttribute="bottom" constant="60" id="VAx-BX-AmN"/>
                             <constraint firstItem="rxH-n5-oab" firstAttribute="centerX" secondItem="vH1-py-gTi" secondAttribute="centerX" id="wN8-sh-n3C"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="modalLabel" destination="La8-H7-BYX" id="xAT-gk-Huu"/>
+                        <outlet property="inoutTextField" destination="67Z-ae-5ac" id="TuZ-w6-aEx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xug-3y-nMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="35"/>
+            <point key="canvasLocation" x="762" y="36"/>
         </scene>
     </scenes>
 </document>

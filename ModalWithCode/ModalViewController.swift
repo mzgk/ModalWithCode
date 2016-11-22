@@ -21,14 +21,53 @@ class ModalViewController: UIViewController {
     var delegate: ModalViewControllerDelegate?
     // 遷移元からの引き継ぎデータ
     var inheritData = ""
-    @IBOutlet weak var modalLabel: UILabel!
+    @IBOutlet weak var inoutTextField: UITextField!
+
+
+// MARK: - ライフサイクル
+    override func loadView() {
+        super.loadView()
+        print("ModalVC :", #function)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ModalVC :", #function)
 
-        // Do any additional setup after loading the view.
         // ここでUIにセットする
-        modalLabel.text = inheritData
+        inoutTextField.text = inheritData
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("ModalVC :", #function)
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        print("ModalVC :", #function)
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print("ModalVC :", #function)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // キーボード表示
+        inoutTextField.becomeFirstResponder()
+        print("ModalVC :", #function)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("ModalVC :", #function)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("ModalVC :", #function)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +78,11 @@ class ModalViewController: UIViewController {
 
 // MARK: - ボタンタップ時にdelegate（ViewController）に実装したDelegateメソッドを実行する
     @IBAction func tapCloseButton(_ sender: UIButton) {
-        self.delegate?.modalViewController(sender: self, inheritText: "Closed")
+        print("ModalVC :", #function)
+        // キーボードを閉じる
+        inoutTextField.resignFirstResponder()
+        // Delegate先のメソッドを呼び出す
+        self.delegate?.modalViewController(sender: self, inheritText: inoutTextField.text!)
     }
 
     /*
